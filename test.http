@@ -1,0 +1,38 @@
+### TEST GET DATA BY ID
+GET http://localhost:3000/api/articles/2
+x-api-key: SHIYZU
+Accept: application/json
+
+### TEST GET ALL DATA
+GET http://localhost:3000/api/articles
+x-api-key: SHIYZU
+Accept: application/json
+
+### TEST CREATE DATA
+POST http://localhost:3000/api/articles
+x-api-key: SHIYZU
+Accept: application/json
+Content-Type: application/json
+
+{
+  "title": "Anime Isekai Terbaik",
+  "author": "shiyzu",
+  "content": "Anime isekai terbaik menurut saya adalah re:zero"
+}
+
+### TEST UPDATE DATA
+PUT http://localhost:3000/api/articles/2
+x-api-key: SHIYZU
+Accept: application/json
+Content-Type: application/json
+
+{
+  "title": "Anime romance comedy terbaik",
+  "author": "kizuna",
+  "content": "Kaguya sama love is war adalah anime romance terbaik"
+}
+
+### TEST DELETE DATA
+DELETE http://localhost:3000/api/articles/10
+x-api-key: SHIYZU
+Accept: application/json
